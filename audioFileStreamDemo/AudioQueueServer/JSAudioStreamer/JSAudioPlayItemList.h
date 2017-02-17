@@ -12,7 +12,7 @@ typedef NS_ENUM(NSInteger,JSAudioPlayMode)
     JSAudioPlayModeInOrderRandom,
     JSAudioPlayModeIn
 
-}
+};
 
 /**
  * 播放音频列表
@@ -34,9 +34,6 @@ typedef NS_ENUM(NSInteger,JSAudioPlayMode)
 - (instancetype)initAudioPlayItemListWithArray:(NSArray *)listArray NS_DESIGNATED_INITIALIZER;
 
 
-/**
- * 
- */
 
 /**
  * 添加音频到列表
