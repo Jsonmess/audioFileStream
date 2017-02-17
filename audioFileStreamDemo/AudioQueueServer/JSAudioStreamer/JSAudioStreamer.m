@@ -44,10 +44,38 @@
 - (void)setPlayItem:(JSAudioPlayItem*)item
 {
     //设置streamer item
+    if (!item)
+    {
+        return;
+    }
+    if (!self.playItemList)
+    {
+        self.playItemList = [[JSAudioPlayItemList alloc] initAudioPlayItemListWithArray:@[item]];
+    }
+    else
+    {
+        [self.playItemList addItemToPlayItemList:item];
+    }
+}
 
+- (BOOL)isPlaying
+{
+    return YES;
+}
 
+- (void)play
+{
 
 }
 
+- (void)pause
+{
+
+}
+
+- (void)stop
+{
+
+}
 
 @end
